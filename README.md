@@ -12,6 +12,11 @@ npm install rh-forumapi
 ## 📚 Kasutamine
 
 ```javascript
+const { RHapi } = require('rh-forumapi');
+
+// Tehke uue constanti koos teie tokeniga
+const api = new RHapi('TEIE_TOKEN');
+
 api.promoteUser('1', '1').then(data => {
   // Kui request on edukas
   if (data.success === true) { 
