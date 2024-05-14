@@ -29,4 +29,4 @@ Kõikide pakkumiste/bagide korral pöörduge Telegrami poole: @miroshhhha
 
 Palume enne kirjutamist uskuda, kas packagi viimane versioon on paigaldatud.
 
-## License [MIT](https://github.com/miroshhhha/rh-forumapi/blob/main/LICENSE.md)
+## License [MIT](https://github.com/miroshhhhha/rh-forumapi/blob/main/LICENSE.md)
