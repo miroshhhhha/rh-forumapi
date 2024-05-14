@@ -22,4 +22,11 @@ api.promoteUser('1', '1').then(data => {
   }
 })
 ```
+
+## ⚙️ Kaasaaitamine
+
+Kõikide pakkumiste/bagide korral pöörduge Telegrami poole: @miroshhhha
+
+Palume enne kirjutamist uskuda, kas packagi viimane versioon on paigaldatud.
+
 ## License [MIT](https://github.com/miroshhhha/rh-forumapi/blob/main/LICENSE.md)
