@@ -1,4 +1,4 @@
-# ⭐ [Русскоязычная версия README](https://github.com/miroshhhhha/rh-forumapi/blob/main/README.ru.md)
+# 🔗 [Русскоязычная версия README](https://github.com/miroshhhhha/rh-forumapi/blob/main/README.ru.md)
 # rh-forumapi 
 
 rh-forumapi on Node-JS package, mis on kirjutatud TypeScriptis, mis võimaldab arendajatel suhelda sisseehitatud XenForo API-ga https://forum.robo-hamster.com 
