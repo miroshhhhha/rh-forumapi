@@ -3,7 +3,7 @@
 
 rh-forumapi on Node-JS package, mis on kirjutatud TypeScriptis, mis võimaldab arendajatel suhelda sisseehitatud XenForo API-ga https://forum.robo-hamster.com 
 
-## 📦 Paigaldamine Kasutage paketihaldurit [npm] (https://www.npmjs.com) teegi paigaldamiseks.
+## 📦 Paigaldamine Kasutage paketihaldurit [npm](https://www.npmjs.com) teegi paigaldamiseks.
 
 ```bash
 npm install rh-forumapi
