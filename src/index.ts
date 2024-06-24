@@ -26,19 +26,28 @@ export class RHapi {
             const response = await axios(config);
             return response.data;
         } catch (error: any) {
-            throw new Error(`Error calling ${method} ${url}: ${error}`);
+            throw new Error(`Error calling ${method} ${url}: ${error.message || error}`);
         }
     }
 
     // @ts-ignore
-    async promoteUser(userId: string, groupId: string): Promise<any> {
-        const url = `/api/promote/${userId}/?group[0]=${groupId}`;
-        return this.request('POST', url);
+    async promoteUser(userId: number, groupId: number): Promise<any> {
+        const url = `/api/promote/${userId}/?group=${groupId}`;
+        try {
+            return this.request('POST', url);
+        } catch (error: any) {
+            if (error.message.includes('group_not_allowed')) {
+                throw new Error('The specified group cannot be assigned.');
+            }
+            throw error;
+        }
     }
 
     // @ts-ignore
-    async demoteUser(userId: string, groupId: string): Promise<any> {
-        const url = `/api/demote/${userId}/?group[0]=${groupId}`;
+    async demoteUser(userId: number, groupId?: number): Promise<any> {
+        const url = groupId ?
+            `/api/demote/${userId}/?group=${groupId}` :
+            `/api/demote/${userId}`;
         return this.request('POST', url);
     }
 }
