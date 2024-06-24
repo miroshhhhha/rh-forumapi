@@ -18,7 +18,7 @@ const { RHapi } = require('rh-forumapi');
 // Объявите переменную, используемую для обращения к API
 const api = new RHapi('ВАШ_ТОКЕН');
 
-api.promoteUser('1', '1').then(data => {
+api.promoteUser(1, 1).then(data => {
   // Если запрос успешен
   if (data.success === true) { 
     // Выведите в консоль текущие группы пользователя
