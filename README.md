@@ -17,7 +17,7 @@ const { RHapi } = require('rh-forumapi');
 // Tehke uue constanti koos teie tokeniga
 const api = new RHapi('TEIE_TOKEN');
 
-api.promoteUser('1', '1').then(data => {
+api.promoteUser(1, 1).then(data => {
   // Kui request on edukas
   if (data.success === true) { 
     // Näitame konsoolis praegused kasutajagrupid
