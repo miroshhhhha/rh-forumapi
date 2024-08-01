@@ -5,7 +5,7 @@ export class RHapi {
     private readonly token: string;
 
     constructor(token: string) {
-        this.baseURL = 'https://forum.robo-hamster.com';
+        this.baseURL = 'https://forum.arzguard.com';
         this.token = token;
     }
 

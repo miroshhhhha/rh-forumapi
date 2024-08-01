@@ -16,7 +16,7 @@ exports.RHapi = void 0;
 const axios_1 = __importDefault(require("axios"));
 class RHapi {
     constructor(token) {
-        this.baseURL = 'https://forum.robo-hamster.com';
+        this.baseURL = 'https://forum.arzguard.com';
         this.token = token;
     }
     // @ts-ignore
